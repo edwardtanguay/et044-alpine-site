@@ -85,4 +85,21 @@ code.block {
   background-color: #292929;
   min-width: 6rem;
   width: 22%;
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+  nav ul {
+    margin: 0 0 0 -1rem !important;
+    padding: 0 !important;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -109,3 +109,22 @@ code.block {
 		}
 	}
 }
+
+@media (max-width: 700px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 1rem 1rem 2rem;
+
+		ul {
+			margin: 0 0 0 -1rem !important;
+			padding: 0 !important;
+			flex-wrap: wrap;
+
+			li {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+		}
+	}
+}
