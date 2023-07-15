@@ -15,7 +15,7 @@
 	<title>Form</title>
 </head>
 
-<body x-data="{formData: {firstName: '', lastName: '', email: ''}}"
+<body x-data="{formData: {firstName: '', lastName: '', email: '', position: '', framework: ''}}"
 	  class="pageForm">
 	<main class="container">
 		<nav>
@@ -37,6 +37,7 @@
 									   x-model="formData.firstName"
 									   required>
 							</label>
+
 							<label for="lastname">
 								Last name
 								<input type="text"
@@ -44,9 +45,51 @@
 									   required>
 							</label>
 						</div>
+
 						<label for="email">Email</label>
-							<input type="text" x-model="formData.email">
+						<input type="text"
+							   x-model="formData.email">
 						<small>Email is optional, but it will enable us to notify you of new features.</small>
+
+						<label for="position">Position</label>
+						<select id="position"
+								x-model="formData.position"
+								required>
+							<option value=""
+									selected>Select a position</option>
+							<option value="fullStack">full-stack developer</option>
+							<option value="frontend">frontend developer</option>
+							<option value="backend">backend developer</option>
+						</select>
+
+						<fieldset>
+							<legend>Framework with which you have the most experience:</legend>
+							<label for="react">
+								<input type="radio"
+									   id="react"
+									   x-model="formData.framework"
+									   name="framework"
+									   value="react">
+								React
+							</label>
+							<label for="angular">
+								<input type="radio"
+									   id="angular"
+									   x-model="formData.framework"
+									   name="framework"
+									   value="angular">
+								Angular
+							</label>
+							<label for="vuejs">
+								<input type="radio"
+									   id="vuejs"
+									   x-model="formData.framework"
+									   name="framework"
+									   value="vuejs">
+								Vue.js
+							</label>
+						</fieldset>
+
 						<button @click="alert('formData = ' + JSON.stringify(formData, null, 2))">Submit</button>
 
 					</form>
@@ -63,6 +106,14 @@
 					<div class="row">
 						<span class="label">Email:</span> <code x-show="formData.email.trim() !=''"
 							  x-text="formData.email"></code>
+					</div>
+					<div class="row">
+						<span class="label">Position:</span> <code x-show="formData.position.trim() !=''"
+							  x-text="formData.position"></code>
+					</div>
+					<div class="row">
+						<span class="label">Framework:</span> <code x-show="formData.framework.trim() !=''"
+							  x-text="formData.framework"></code>
 					</div>
 				</div>
 			</div>
