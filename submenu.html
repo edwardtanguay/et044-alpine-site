@@ -12,6 +12,10 @@
 		  href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 	<link rel="stylesheet"
 		  href="css/main.css">
+		    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 	<title>Submenu</title>
 </head>
 
@@ -20,7 +24,7 @@
 	<main class="container">
 		<nav>
 			<ul>
-				<li><strong>submenu</strong></li>
+				<li class="animate__animated animate__lightSpeedInLeft"><strong>submenu</strong></li>
 			</ul>
 			<ul>
 				<li><a href="index.html">home</a></li>
@@ -54,39 +58,40 @@
 				elements themselves.</p>
 			<code class="block">
 				<pre>
-&lt;body x-data=&quot;{subpage: &#39;p1&#39;}&quot;&gt;
+					&lt;body x-data=&quot;{subpage: &#39;p1&#39;}&quot;&gt;
 
-&lt;li @click=&quot;subpage = &#39;p1&#39;&quot; :class=&quot;subpage===&#39;p1&#39; ?  &#39;active&#39; : &#39;&#39;&quot;&gt;Intro&lt;/li&gt;
+					&lt;li @click=&quot;subpage = &#39;p1&#39;&quot; :class=&quot;subpage===&#39;p1&#39; ?
+					&#39;active&#39; : &#39;&#39;&quot;&gt;Intro&lt;/li&gt;
 
-&lt;section x-show=&quot;subpage===&#39;p1&#39;&quot;&gt;</pre>
+					&lt;section x-show=&quot;subpage===&#39;p1&#39;&quot;&gt;</pre>
 			</code>
-			</section>
-			<section x-show="subpage==='p3'">
-				<h2>Good user experience on mobile devices</h2>
-				<p>Because this form of menus do not require a round-trip to the server, the user experiences the site
-					as
-					much faster on mobile devices.</p>
-			</section>
-			<section x-show="subpage==='p4'">
-				<h2>Bookmarking must be programmed</h2>
-				<p>Note that with this solution, when you click a menu link, it is not reflected in the URL.</p>
-				<p>This would have to be programmed with JavaScript, similar to the Router in <a
-					   href="https://starters.tanguay.eu/list/darkViteVanillaMenu"
-					   target="_blank">this Vite Vanilla starter</a>.</p>
-			</section>
-			<section x-show="subpage==='p5'">
-				<h2>Other uses</h2>
-				<p>Alpine's feature that allows you to easily define state variables which can turn hide and show
-					various
-					elements on the page, or change their appearance based on what the use sets with button and other
-					controls, can be used in many ways:</p>
-				<ul>
-					<li>interactive forms</li>
-					<li>games</li>
-					<li>learning tools such as flashcards</li>
-					<li>creative layouts and menus that allow the user to turn on only what he wants to see</li>
-				</ul>
-			</section>
+		</section>
+		<section x-show="subpage==='p3'">
+			<h2>Good user experience on mobile devices</h2>
+			<p>Because this form of menus do not require a round-trip to the server, the user experiences the site
+				as
+				much faster on mobile devices.</p>
+		</section>
+		<section x-show="subpage==='p4'">
+			<h2>Bookmarking must be programmed</h2>
+			<p>Note that with this solution, when you click a menu link, it is not reflected in the URL.</p>
+			<p>This would have to be programmed with JavaScript, similar to the Router in <a
+				   href="https://starters.tanguay.eu/list/darkViteVanillaMenu"
+				   target="_blank">this Vite Vanilla starter</a>.</p>
+		</section>
+		<section x-show="subpage==='p5'">
+			<h2>Other uses</h2>
+			<p>Alpine's feature that allows you to easily define state variables which can turn hide and show
+				various
+				elements on the page, or change their appearance based on what the use sets with button and other
+				controls, can be used in many ways:</p>
+			<ul>
+				<li>interactive forms</li>
+				<li>games</li>
+				<li>learning tools such as flashcards</li>
+				<li>creative layouts and menus that allow the user to turn on only what he wants to see</li>
+			</ul>
+		</section>
 	</main>
 </body>
 
