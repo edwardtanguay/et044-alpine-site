@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"
+	  data-theme="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	<script defer
+			src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+	<link rel="stylesheet"
+		  href="css/main.css">
+	<title>Counter</title>
+</head>
+
+<body x-data="{count: 0}">
+	<main class="container">
+		<nav>
+			<ul>
+				<li><strong>counter</strong></li>
+			</ul>
+			<ul>
+				<li><a href="index.html">home</a></li>
+			</ul>
+		</nav>
+		<section>
+			<div class="grid">
+				<div>
+					<a role="button"
+					   href="#"
+					   @click="count++">increment</a>
+				</div>
+				<div>
+					<div x-text="count"></div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div @keyup.escape.window="count = 0">press ESC to reset to 0</div>
+		</section>
+	</main>
+</body>
+
+</html>
