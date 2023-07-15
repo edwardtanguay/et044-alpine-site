@@ -62,9 +62,12 @@ details ul {
   color: green;
 }
 
-.pageSearch section span.all {
+.pageSearch section span {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
+}
+.pageSearch section span li span {
+  min-width: 12rem;
 }/*# sourceMappingURL=main.css.map */
