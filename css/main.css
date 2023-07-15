@@ -129,6 +129,18 @@ code.block {
   color: #888;
 }
 
+.pageTable table {
+  margin-top: 2rem;
+}
+.pageTable table thead th {
+  text-align: center;
+  color: rgb(226, 208, 156);
+}
+.pageTable table tbody tr td:first-of-type {
+  color: rgb(149, 216, 118);
+  white-space: nowrap;
+}
+
 @media (max-width: 500px) {
   body.pageIndex nav {
     display: flex;
