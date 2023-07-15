@@ -31,10 +31,10 @@
 		<nav class="submenu">
 			<ul>
 				<li @click="subpage = 'p1'" :class="subpage==='p1' ? 'active' : ''">Intro</li>
-				<li @click="subpage = 'p2'" :class="subpage==='p2' ? 'active' : ''">Similarities</li>
-				<li @click="subpage = 'p3'" :class="subpage==='p3' ? 'active' : ''">Good mobile experience</li>
-				<li @click="subpage = 'p4'" :class="subpage==='p4' ? 'active' : ''">No bookmarking</li>
-				<li @click="subpage = 'p5'" :class="subpage==='p5' ? 'active' : ''">Other uses</li>
+				<li @click="subpage = 'p2'" :class="subpage==='p2' ? 'active' : ''">Similarity</li>
+				<li @click="subpage = 'p3'" :class="subpage==='p3' ? 'active' : ''">Fast</li>
+				<li @click="subpage = 'p4'" :class="subpage==='p4' ? 'active' : ''">Disadvantage</li>
+				<li @click="subpage = 'p5'" :class="subpage==='p5' ? 'active' : ''">Uses</li>
 			</ul>
 		</nav>
 		<section x-show="subpage==='p1'">
@@ -57,7 +57,7 @@
 		</section>
 		<section x-show="subpage==='p3'">
 			<h2>Good user experience on mobile devices</h2>
-			<p>Because this form of menus do not require a round-trip to the server, the user-experience on mobile devices is much better.</p>
+			<p>Because this form of menus do not require a round-trip to the server, the user experiences the site as much faster on mobile devices.</p>
 		</section>
 		<section x-show="subpage==='p4'">
 			<h2>Bookmarking must be programmed</h2>
