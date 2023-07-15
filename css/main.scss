@@ -88,8 +88,7 @@ details {
 		flex-wrap: wrap;
 		gap: .5rem;
 		font-size: .8rem;
-		li span {
-		min-width: 12rem;
-		}
+		  word-break: break-word; /* Chrome, Safari */
+  overflow-wrap: anywhere; /* Firefox */
 	}
 }

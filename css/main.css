@@ -67,7 +67,6 @@ details ul {
   flex-wrap: wrap;
   gap: 0.5rem;
   font-size: 0.8rem;
-}
-.pageSearch section span li span {
-  min-width: 12rem;
+  word-break: break-word; /* Chrome, Safari */
+  overflow-wrap: anywhere; /* Firefox */
 }/*# sourceMappingURL=main.css.map */
