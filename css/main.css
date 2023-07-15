@@ -20,8 +20,13 @@ details ul {
   margin-left: 2rem;
 }
 
-code {
-  color: rgb(119, 26, 26);
+code,
+pre {
+  color: rgb(158, 82, 31);
+}
+
+code.block {
+  padding: 1rem 1rem 0 1rem;
 }
 
 .pageCounter section {
