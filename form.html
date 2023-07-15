@@ -15,7 +15,7 @@
 	<title>Form</title>
 </head>
 
-<body x-data="{formData: {firstName: '', lastName: ''}}"
+<body x-data="{formData: {firstName: '', lastName: '', email: ''}}"
 	  class="pageForm">
 	<main class="container">
 		<nav>
@@ -30,26 +30,39 @@
 			<div class="grid">
 				<div>
 					<form>
-						<label for="firstname">
-							First name
-							<input type="text"
-								   x-model="formData.firstName"
-								   required>
-						</label>
-						<label for="lastname">
-							Last name
-							<input type="text"
-								   x-model="formData.lastName"
-								   required>
-						</label>
+						<div class="grid">
+							<label for="firstname">
+								First name
+								<input type="text"
+									   x-model="formData.firstName"
+									   required>
+							</label>
+							<label for="lastname">
+								Last name
+								<input type="text"
+									   x-model="formData.lastName"
+									   required>
+							</label>
+						</div>
+						<label for="email">Email</label>
+							<input type="text" x-model="formData.email">
+						<small>Email is optional, but it will enable us to notify you of new features.</small>
+						<button @click="alert('formData = ' + JSON.stringify(formData, null, 2))">Submit</button>
+
 					</form>
 				</div>
 				<div class="formData">
 					<div class="row">
-						<span class="label">First Name:</span> <code x-show="formData.firstName.trim() !=''" x-text="formData.firstName"></code>
+						<span class="label">First Name:</span> <code x-show="formData.firstName.trim() !=''"
+							  x-text="formData.firstName"></code>
 					</div>
 					<div class="row">
-						<span class="label">Last Name:</span> <code x-show="formData.lastName.trim() !=''" x-text="formData.lastName"></code>
+						<span class="label">Last Name:</span> <code x-show="formData.lastName.trim() !=''"
+							  x-text="formData.lastName"></code>
+					</div>
+					<div class="row">
+						<span class="label">Email:</span> <code x-show="formData.email.trim() !=''"
+							  x-text="formData.email"></code>
 					</div>
 				</div>
 			</div>
