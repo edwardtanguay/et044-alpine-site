@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: #111;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-bottom: 2rem;
+}
+
+ul {
+	margin-left: 1rem;
+}
+
+.pageCounter {
+
+	section {
+		display: grid;
+		place-items: center;
+		text-align: center;
+	}
+
+	.countArea {
+		background-color: #111;
+		width: 10rem;
+		height: 10rem;
+		display: grid;
+		place-items: center;
+		border-radius: 1rem;
+		font-size: 4rem;
+	}
+}
