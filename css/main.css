@@ -32,4 +32,17 @@ details ul {
   place-items: center;
   border-radius: 1rem;
   font-size: 4rem;
+}
+
+.pageEmojis ul {
+  list-style-type: disc;
+  padding: 0;
+  margin: 0;
+}
+.pageEmojis ul li {
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+}
+.pageEmojis ul li:before {
+  content: "o";
 }/*# sourceMappingURL=main.css.map */

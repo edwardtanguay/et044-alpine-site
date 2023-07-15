@@ -39,3 +39,19 @@ details {
 		font-size: 4rem;
 	}
 }
+
+.pageEmojis {
+	ul {
+		list-style-type: ;
+		padding: 0;
+		margin: 0;
+
+		li {
+			padding-left: 1rem;
+			text-indent: -0.7rem;
+			&:before {
+				content: 'o';
+			}
+		}
+	}
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+	  data-theme="dark">
 
 <head>
 	<meta charset="UTF-8">
@@ -7,38 +8,36 @@
 		  content="width=device-width, initial-scale=1.0">
 	<script defer
 			src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-	<title>Alpine.js</title>
-	<style>
-		body {
-			background-color: lime;
-		}
-		span {
-			font-size: 15rem;
-			transition: .2s;
-			position: absolute;
-			top: 10px;
-			left: 10px;
-		}
-		div.show {
-			position: relative;
-			width: 100%;
-			height: 29rem;
-		}
-		div.show:hover span {
-			font-size: 16rem;
-			left: 500px;
-		}
-	</style>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+	<link rel="stylesheet"
+		  href="css/main.css">
+	<title>Emojis</title>
 </head>
 
-<body>
-	<h1>Alpine.js</h1>
-	<h1 x-data="{ message: 'I ❤️ ⌛ 😅 Alpine &#8986;' }"
+<body x-data="{count: 0}" class="pageEmojis">
+	<main class="container">
+		<nav>
+			<ul>
+				<li><strong>emojis</strong></li>
+			</ul>
+			<ul>
+				<li><a href="index.html">home</a></li>
+			</ul>
+		</nav>
+		<section>
+	<p>If you want to put some ❤️ in your website text, you can go to the <a href="https://unicode.party" target="_blank">Unicode Party</a> site to find hundreds of emojis that you can either directly copy and paste into the text of your website which will appear as emojis in editors such as VSCode, or you can copy the UTF-8 emoji code into your HTML, like this: .</p>
+	<h1 x-data="{ message: 'I ️ ⌛ 😅 Alpine &#8986;' }"
 		x-text="message"></h1>
 	<p>&#8986;&#8986;&#8986;</p>
+	<ul>
+		<li>nnn</li>
+		<li>nnn</li>
+	</ul>
 	<div class="show">
 		<span>😅</span>
 	</div>
+		</section>
 </body>
 
 </html>
