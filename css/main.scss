@@ -83,9 +83,13 @@ details {
 }
 
 .pageSearch {
-	section span {
+	section span.all {
 		display: flex;
 		flex-wrap: wrap;
 		gap: .5rem;
+
+		div {
+			overflow: hidden;
+		}
 	}
 }
