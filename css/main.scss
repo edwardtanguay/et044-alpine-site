@@ -49,8 +49,9 @@ details {
 			padding-left: 2rem;
 			text-indent: -1.7rem;
 			list-style-type: none;
+
 			&:before {
-				content: '✔️ ';
+				content: '⛔✔️ ';
 			}
 		}
 	}
