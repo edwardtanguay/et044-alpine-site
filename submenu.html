@@ -32,8 +32,9 @@
 			<ul>
 				<li @click="subpage = 'p1'" :class="subpage==='p1' ? 'active' : ''">Intro</li>
 				<li @click="subpage = 'p2'" :class="subpage==='p2' ? 'active' : ''">Similarities</li>
-				<li @click="subpage = 'p3'" :class="subpage==='p3' ? 'active' : ''">No bookmarking</li>
-				<li @click="subpage = 'p4'" :class="subpage==='p4' ? 'active' : ''">Other uses</li>
+				<li @click="subpage = 'p3'" :class="subpage==='p3' ? 'active' : ''">Good mobile experience</li>
+				<li @click="subpage = 'p4'" :class="subpage==='p4' ? 'active' : ''">No bookmarking</li>
+				<li @click="subpage = 'p5'" :class="subpage==='p5' ? 'active' : ''">Other uses</li>
 			</ul>
 		</nav>
 		<section x-show="subpage==='p1'">
@@ -55,11 +56,15 @@
 			</code>
 		</section>
 		<section x-show="subpage==='p3'">
+			<h2>Good user experience on mobile devices</h2>
+			<p>Because this form of menus do not require a round-trip to the server, the user-experience on mobile devices is much better.</p>
+		</section>
+		<section x-show="subpage==='p4'">
 			<h2>Bookmarking must be programmed</h2>
 			<p>Note that with this solution, when you click a menu link, it is not reflected in the URL.</p>
 			<p>This would have to be programmed with JavaScript, similar to the Router in <a href="https://starters.tanguay.eu/list/darkViteVanillaMenu" target="_blank">this Vite Vanilla starter</a>.</p>
 		</section>
-		<section x-show="subpage==='p4'">
+		<section x-show="subpage==='p5'">
 			<h2>Other uses</h2>
 			<p>Alpine's feature that allows you to easily define state variables which can turn hide and show various elements on the page, or change their appearance based on what the use sets with button and other controls, can be used in many ways:</p>
 			<ul>
