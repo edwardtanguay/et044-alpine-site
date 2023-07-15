@@ -126,6 +126,10 @@ code.block {
   justify-content: space-between;
   margin-top: -1.4rem;
 }
+.pageForm form button:focus {
+  animation: fadeOutRight;
+  animation-duration: 1s;
+}
 .pageForm .formData {
   padding-top: 2rem;
   margin-left: 2rem;
@@ -147,6 +151,12 @@ code.block {
 .pageTable table tbody tr td:first-of-type {
   color: rgb(149, 216, 118);
   white-space: nowrap;
+}
+.pageTable table tbody tr td:hover {
+  color: yellow;
+  transition: color 2s;
+  animation: headShake;
+  animation-duration: 1s;
 }
 
 @media (max-width: 500px) {

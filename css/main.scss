@@ -7,11 +7,11 @@ $active-link: green;
 }
 
 .animate__animated.animate__zoomIn {
-  --animate-duration: .2s;
+	--animate-duration: .2s;
 }
 
 .animate__animated.animate__lightSpeedInLeft {
-  --animate-duration: .2s;
+	--animate-duration: .2s;
 }
 
 nav {
@@ -143,6 +143,11 @@ code.block {
 			justify-content: space-between;
 			margin-top: -1.4rem;
 		}
+
+		button:focus {
+			animation: fadeOutRight;
+			animation-duration: 1s;
+		}
 	}
 
 	.formData {
@@ -175,6 +180,13 @@ code.block {
 				td:first-of-type {
 					color: rgb(149, 216, 118);
 					white-space: nowrap;
+				}
+
+				td:hover {
+					color: yellow;
+					transition: color 2s;
+					animation: headShake;
+					animation-duration: 1s;
 				}
 			}
 		}
