@@ -67,4 +67,8 @@ details ul {
   flex-wrap: wrap;
   gap: 0.5rem;
   font-size: 0.6rem;
+}
+.pageSearch section div.all div {
+  padding: 0.5rem;
+  background-color: #444;
 }/*# sourceMappingURL=main.css.map */
