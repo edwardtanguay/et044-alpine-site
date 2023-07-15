@@ -659,7 +659,8 @@ nouns:
       the matching data by going through all objects of an array with the <code>x-for</code> attribute and showing those
       that match the criteria with a <code>x-show</code> attribute.</p>
     <section x-data="{searchText: ''}">
-      Search: <input type="text"
+      <input type="search"
+          placeholder="search for a noun"
              x-model="searchText" />
       <div class="all"
            x-show="searchText === ''">

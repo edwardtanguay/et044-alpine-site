@@ -71,6 +71,15 @@ code.block {
   color: green;
 }
 
+.pageSearch input::-moz-placeholder {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.pageSearch input::placeholder {
+  color: #333;
+  font-size: 1.1rem;
+}
 .pageSearch section div.all {
   display: flex;
   flex-wrap: wrap;
