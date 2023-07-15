@@ -15,7 +15,7 @@
 	<title>Form</title>
 </head>
 
-<body x-data="{formData: {firstName: '', lastName: '', email: '', position: '', framework: '', cvSubmitted: false, termsAgreedTo: false, publishProfile: false, startDate: ''}}"
+<body x-data="{formData: {firstName: '', lastName: '', email: '', position: '', framework: '', cvSubmitted: false, termsAgreedTo: false, publishProfile: false, startDate: '', applicationProcessSatisfaction: 5}}"
 	  class="pageForm">
 	<main class="container">
 		<nav>
@@ -27,7 +27,8 @@
 			</ul>
 		</nav>
 		<section>
-			<p><strong>Alpine.js</strong> makes form building much more straight-forward and provides many
+			<p><strong>Alpine.js</strong> and <strong>Pico.css</strong> make form building much more straight-forward
+				and provides many
 				simplifications that improve the user-experience and standardize the data being sent to the server, e.g.
 				checkboxes are sent as boolean <code>true</code> or <code>false</code> instead of a name or blank as on
 				standard HTML forms.</p>
@@ -124,9 +125,21 @@
 
 						<label for="startDate">Date
 							<input type="date"
-								x-model="formData.startDate"
+								   x-model="formData.startDate"
 								   id="startDate">
 						</label>
+
+						<label for="applicationProcessSatisfaction">How satisfied are you with our application
+							process?</label>
+						<input type="range"
+							   x-model="formData.applicationProcessSatisfaction"
+							   min="0"
+							   max="10"
+							   id="applicationProcessSatisfaction">
+						<small class="rangeControl">
+							<div>bad</div>
+							<div>good</div>
+						</small>
 
 						<button @click="alert('formData = ' + JSON.stringify(formData, null, 2))">Submit</button>
 
@@ -168,6 +181,11 @@
 					<div class="row">
 						<span class="label">Start date:</span> <code x-show="formData.startDate"
 							  x-text="formData.startDate"></code>
+					</div>
+					<div class="row">
+						<span class="label">Application process satisfaction</span> <code
+							  x-show="formData.applicationProcessSatisfaction"
+							  x-text="formData.applicationProcessSatisfaction"></code>
 					</div>
 				</div>
 			</div>

@@ -113,6 +113,11 @@ code.block {
   color: #333;
   font-size: 1.1rem;
 }
+.pageForm form small.rangeControl {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1.4rem;
+}
 .pageForm .formData {
   padding-top: 2rem;
   margin-left: 2rem;
