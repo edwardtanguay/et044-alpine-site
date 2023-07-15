@@ -96,6 +96,30 @@ code.block {
   width: 22%;
 }
 
+.pageForm form {
+  background-color: #111;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.pageForm form input::-moz-placeholder {
+  color: #333;
+  font-size: 1.1rem;
+}
+.pageForm form input::placeholder {
+  color: #333;
+  font-size: 1.1rem;
+}
+.pageForm .formData {
+  padding-top: 2rem;
+  margin-left: 2rem;
+}
+.pageForm .formData .row {
+  height: 2rem;
+}
+.pageForm .formData .row .label {
+  color: #888;
+}
+
 @media (max-width: 500px) {
   body.pageIndex nav {
     display: flex;

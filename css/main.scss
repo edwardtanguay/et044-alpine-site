@@ -96,6 +96,7 @@ code.block {
 		color: #333;
 		font-size: 1.1rem;
 	}
+
 	section div.all {
 		display: flex;
 		flex-wrap: wrap;
@@ -110,6 +111,30 @@ code.block {
 			background-color: #292929;
 			min-width: 6rem;
 			width: 22%
+		}
+	}
+}
+
+.pageForm {
+	form {
+		background-color: #111;
+		padding: 1rem;
+		border-radius: .5rem;
+		input::placeholder {
+			color: #333;
+			font-size: 1.1rem;
+		}
+	}
+
+	.formData {
+		padding-top: 2rem;
+		margin-left: 2rem;
+
+		.row {
+			height: 2rem;
+			.label {
+				color: #888;
+			}
 		}
 	}
 }
