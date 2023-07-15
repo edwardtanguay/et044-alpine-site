@@ -124,10 +124,12 @@ code.block {
 		background-color: #111;
 		padding: 1rem;
 		border-radius: .5rem;
+
 		input::placeholder {
 			color: #333;
 			font-size: 1.1rem;
 		}
+
 		small.rangeControl {
 			display: flex;
 			justify-content: space-between;
@@ -141,6 +143,7 @@ code.block {
 
 		.row {
 			height: 2rem;
+
 			.label {
 				color: #888;
 			}
@@ -151,12 +154,14 @@ code.block {
 .pageTable {
 	table {
 		margin-top: 2rem;
+
 		thead {
 			th {
 				text-align: center;
 				color: rgb(226, 208, 156);
 			}
 		}
+
 		tbody {
 			tr {
 				td:first-of-type {
