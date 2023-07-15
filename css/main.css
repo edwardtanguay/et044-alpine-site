@@ -48,6 +48,10 @@ details ul {
   content: "✅️ ";
 }
 
+.pageSubmenu h2 {
+  color: #005c00;
+  margin-bottom: 1rem;
+}
 .pageSubmenu nav.submenu ul li {
   cursor: pointer;
 }

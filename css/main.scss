@@ -60,6 +60,11 @@ details {
 }
 
 .pageSubmenu {
+	h2 {
+		color: darken($active-link, 7%);
+		margin-bottom: 1rem;
+	}
+
 	nav.submenu {
 		ul {
 			li {
