@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -34,15 +35,15 @@ details ul {
   font-size: 4rem;
 }
 
-.pageEmojis ul {
-  list-style-type: disc;
+.pageEmojis ul.checkmarks {
   padding: 0;
   margin: 0;
 }
-.pageEmojis ul li {
-  padding-left: 1rem;
-  text-indent: -0.7rem;
+.pageEmojis ul.checkmarks li {
+  padding-left: 2rem;
+  text-indent: -1.7rem;
+  list-style-type: none;
 }
-.pageEmojis ul li:before {
-  content: "o";
+.pageEmojis ul.checkmarks li:before {
+  content: "✔️ ";
 }/*# sourceMappingURL=main.css.map */
