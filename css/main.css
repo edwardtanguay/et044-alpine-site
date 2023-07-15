@@ -60,4 +60,10 @@ details ul {
 }
 .pageSubmenu nav.submenu ul li.active {
   color: green;
+}
+
+.pageSearch section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
