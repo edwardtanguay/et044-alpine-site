@@ -643,7 +643,8 @@ nouns:
     plural: 'Frameworks'
   }
 ]
-}" class="pageSearch">
+}"
+	  class="pageSearch">
 	<main class="container">
 		<nav>
 			<ul>
@@ -654,10 +655,22 @@ nouns:
 			</ul>
 		</nav>
 		<section x-data="{searchText: ''}">
-			Search: <input type="text" x-model="searchText"/>
-			<template x-for="noun in nouns">
-				<div x-text="noun.singular" x-show="noun.singular.toLowerCase().includes(searchText.toLowerCase())"></div>
-			</template>
+			Search: <input type="text"
+				   x-model="searchText" />
+			<span class="all" x-show="searchText === ''">
+				<template x-for="noun in nouns">
+					<div x-text="noun.singular"></div>
+				</template>
+			</span>
+			<span x-show="searchText !== ''">
+				<ul>
+				<template x-for="noun in nouns">
+					<li x-show="noun.singular.toLowerCase().includes(searchText.toLowerCase())">
+						<span x-text="noun.article"></span> <span x-text="noun.singular"></span>
+					</li>
+				</template>
+				</ul>
+			</span>
 		</section>
 	</main>
 </body>
