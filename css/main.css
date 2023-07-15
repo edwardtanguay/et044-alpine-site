@@ -76,9 +76,13 @@ code.block {
   flex-wrap: wrap;
   gap: 0.5rem;
   font-size: 0.8rem;
+  justify-content: space-around;
 }
 .pageSearch section div.all div {
+  display: grid;
+  place-items: center;
   padding: 0.5rem;
   background-color: #292929;
   min-width: 6rem;
+  width: 22%;
 }/*# sourceMappingURL=main.css.map */
