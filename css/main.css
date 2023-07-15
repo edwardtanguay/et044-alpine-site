@@ -71,4 +71,5 @@ details ul {
 .pageSearch section div.all div {
   padding: 0.5rem;
   background-color: #444;
+  min-width: 10rem;
 }/*# sourceMappingURL=main.css.map */

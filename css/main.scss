@@ -87,11 +87,12 @@ details {
 		display: flex;
 		flex-wrap: wrap;
 		gap: .5rem;
-	font-size: .6rem;
+		font-size: .6rem;
 
-div {
-	padding: .5rem;
-	background-color: #444;
-}
+		div {
+			padding: .5rem;
+			background-color: #444;
+			min-width: 10rem;
+		}
 	}
 }
