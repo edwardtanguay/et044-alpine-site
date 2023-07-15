@@ -46,4 +46,14 @@ details ul {
 }
 .pageEmojis ul.checkmarks li:before {
   content: "✅️ ";
+}
+
+.pageSubmenu nav.submenu ul li {
+  cursor: pointer;
+}
+.pageSubmenu nav.submenu ul li:hover {
+  color: #00e600;
+}
+.pageSubmenu nav.submenu ul li.active {
+  color: green;
 }/*# sourceMappingURL=main.css.map */

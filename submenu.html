@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"
+	  data-theme="dark">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	<script defer
+			src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	<link rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+	<link rel="stylesheet"
+		  href="css/main.css">
+	<title>Submenu</title>
+</head>
+
+<body x-data="{subpage: 'p1'}"
+	  class="pageSubmenu">
+	<main class="container">
+		<nav>
+			<ul>
+				<li><strong>submenu</strong></li>
+			</ul>
+			<ul>
+				<li><a href="index.html">home</a></li>
+			</ul>
+		</nav>
+		<p>Alpine.js allows you to create simple menus which <span data-tooltip="as when using React Router">display
+				areas of the page immediately</span>, without a server round-trip.</p>
+		<nav class="submenu">
+			<ul>
+				<li @click="subpage = 'p1'" :class="subpage==='p1' ? 'active' : ''">one</li>
+				<li @click="subpage = 'p2'" :class="subpage==='p2' ? 'active' : ''">two</li>
+			</ul>
+		</nav>
+		<section x-show="subpage==='p1'">
+			<p>this is page one</p>
+		</section>
+		<section x-show="subpage==='p2'">
+			<p>and this is page two</p>
+		</section>
+	</main>
+</body>
+
+</html>

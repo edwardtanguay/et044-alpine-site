@@ -1,3 +1,5 @@
+$active-link: green;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -52,6 +54,24 @@ details {
 
 			&:before {
 				content: '✅️ ';
+			}
+		}
+	}
+}
+
+.pageSubmenu {
+	nav.submenu {
+		ul {
+			li {
+				cursor: pointer;
+
+				&:hover {
+					color: lighten($active-link, 20%);
+				}
+
+				&.active {
+					color: $active-link;
+				}
 			}
 		}
 	}
