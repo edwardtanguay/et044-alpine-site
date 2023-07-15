@@ -62,7 +62,7 @@ details ul {
   color: green;
 }
 
-.pageSearch section span.all {
+.pageSearch section div.all {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
